@@ -1,0 +1,44 @@
+# Core
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+# Database/Storage (choose one)
+sqlite3  # Built-in, no install needed
+# OR for production:
+# asyncpg==0.29.0
+# sqlalchemy==2.0.23
+# alembic==1.12.1
+
+# AI/ML
+openai==1.6.1  # For DeepSeek API (they use OpenAI-compatible API)
+# OR if DeepSeek needs their own SDK:
+# deepseek-api==0.1.0  # If they have one
+
+# Document Processing
+PyPDF2==3.0.1  # For PDF text extraction
+# OR pdfplumber==0.10.3 (better but heavier)
+python-docx==1.1.0  # For Word documents
+pytesseract==0.3.10  # For OCR (if you add image upload)
+Pillow==10.1.0  # For image processing
+
+# Utilities
+aiofiles==23.2.1  # Async file handling
+httpx==0.25.2  # Async HTTP client
+python-jose[cryptography]==3.3.0  # For JWT if you add auth
+passlib[bcrypt]==1.7.4  # For password hashing
+
+# Templates
+jinja2==3.1.2  # For HTML templating
+# OR if using HTMX:
+# htmx==1.9.0
+
+# Monitoring/Logging
+structlog==23.2.0  # Structured logging
+prometheus-client==0.19.0  # For metrics
+
+# Testing (optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
